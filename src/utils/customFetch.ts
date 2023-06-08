@@ -4,7 +4,7 @@ import { Endpoint } from "../types/endpoint.enum";
 const customFetch = async (endpoint: Endpoint) => {
   try {
     const fetchData = await fetch(
-      `${process.env.REACT_APP_SERVER_BASE_URL}/${endpoint}`
+      `https://serverdeploytest-production.up.railway.app/${endpoint}`
     );
     return await fetchData.json();
   } catch (error) {
